@@ -1426,9 +1426,6 @@ define(['d3'], function() {
           parent2: mergeTarget.id,
           isNoFFCommit: true
         }, 'Merge');
-      } else if (this.isAncestorOf(currentCommit.id, mergeTarget.id)) {
-        this.fastForward(mergeTarget);
-        return 'Fast-Forward';
       } else {
         this.commit({
           parent2: mergeTarget.id
