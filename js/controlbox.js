@@ -175,6 +175,7 @@ function(_yargs, d3, demos) {
 			  this.value = '';
               return;
             }
+			this.value = this.value.trim();
 
             cBox._commandHistory.unshift(this.value);
             cBox._tempCommand = '';
