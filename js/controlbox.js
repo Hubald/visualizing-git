@@ -115,12 +115,14 @@ function(_yargs, d3, demos) {
       })
 
       selector.on('change', function () {
+	  /*
         if (!confirm('This will erase your current progress. Continue?')) {
           d3.event.preventDefault()
           d3.event.stopPropagation()
           selector.node().value = window.location.hash.replace(/^#/, '') || demos[0].key
           return false
         }
+	  */
         var currentDemo = window.location.hash
         var sel = selector.node()
         var newDemo = sel.options[sel.selectedIndex].value
